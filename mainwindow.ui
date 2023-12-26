@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>661</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Tool Buttons Code */
+
+QCalendarWidget QToolButton
+{
+	height:60px;
+	width:150px;
+	color:white;
+	font-size:30px;
+	icon-size:50px 50px;
+	background-color:rgb(52,50,64);
+}
+QCalendarWidget QWidget#qt_calendar_navigationbar
+{
+	background-color:rgb(52,50,64);
+}
+
+/* MenuBar Code */
+
+QCalendarWidget QMenu
+{
+	width:150px;
+	left:20px;
+	color:white;
+	font-size:18px;
+	background-color:rgb(52,50,64);
+}
+
+/* SpinBox Code */
+
+QCalendarWidget QSpinBox
+{
+	width:150px;
+	height:60px;
+	font-size:24px;
+	color:white;
+	background-color:rgb(52,50,64);	
+}
+QCalendarWidget QSpinBox::up-button
+{
+	subcontrol-origin: border;
+	subcontrol-position:left;
+	width:65px;
+	height:60px;
+}
+QCalendarWidget QSpinBox::down-button
+{
+	subcontrol-origin: border;
+	subcontrol-position:right;
+	width:65px;
+	height:60px;
+}
+
+/* Calendar View Code */
+QCalendarWidget QWidget
+{
+	alternate-background-color:rgb(150,40,34);
+}
+QCalendarWidget QAbstractItemView:enabled
+{
+	font-size:24px;
+	color:white;
+	background-color:rgb(52,50,64);	
+	selection-background-color:rgb(241,92,34);
+	selection-color:white;
+}
+QCalendarWidget QAbstractItemView:disabled
+{
+	color:rgb(100,100,100);
+}
+
+/* Thanks For Watching Video */</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
